@@ -2,24 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Choose your language</title>
+    <style>
+      #language-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .option {
+        text-align: center;
+        width: 80%;
+        margin: 10px;
+      }
+      img {
+        height: 50px;
+        width: 75px;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>Choose your language</h1>
     <div id="language-options">
-      <button id="option-1">Option 1</button>
-      <button id="option-2">Option 2</button>
-      <button id="option-3">Option 3</button>
+      <div class="option">
+        <button id="option-1">Australia</button>
+        <img src="australia-flag.png" alt="Australia Flag">
+      </div>
+      <div class="option">
+        <button id="option-2">Thailand</button>
+        <img src="thailand-flag.png" alt="Thailand Flag">
+      </div>
+      <div class="option">
+        <button id="option-3">Taiwan</button>
+        <img src="taiwan-flag.png" alt="Taiwan Flag">
+      </div>
     </div>
     <script>
       document.getElementById("option-1").addEventListener("click", function() {
-        // add code to redirect to the appropriate page for option 1
+        // add code to redirect to the appropriate page for Australia
       });
       document.getElementById("option-2").addEventListener("click", function() {
-        // add code to redirect to the appropriate page for option 2
+        // add code to redirect to the appropriate page for Thailand
       });
       document.getElementById("option-3").addEventListener("click", function() {
-        // add code to redirect to the appropriate page for option 3
+        // add code to redirect to the appropriate page for Taiwan
       });
     </script>
   </body>
