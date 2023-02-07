@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       background-color: #132452;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    
-    h1 {
-      font-family: Optima;
-      font-size: 24px;
-      text-align: center;
-    }
-    
-    .flag-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 20px;
+      font-family: Optima, sans-serif;
+      color: white;
     }
-    
-    .flag-item {
+
+    .flag-options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flag {
+      width: 50%;
       margin-bottom: 20px;
     }
-    
-    img {
-      width: 50px;
-      height: 50px;
+
+    .flag img {
+      width: 100%;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
       cursor: pointer;
     }
   </style>
-  <script>
-    function selectCountry(value) {
-      alert("You selected: " + value);
-    }
-  </script>
 </head>
 <body>
-  <h1>Choose your language</h1>
-  <h1>选择你的国家</h1>
-  <h1>เลือกประเทศของคุณ</h1>
-  <div class="flag-container">
-    <div class="flag-item">
-      <img src="https://cdn.britannica.com/78/6078-004-77AF7322/Flag-Australia.jpg" onClick='selectCountry("Australia")' />
-      <p>Australia</p>
+  <h2>Choose your language</h2>
+  <h2>选择你的国家</h2>
+  <h2>เลือกประเทศของคุณ</h2>
+
+  <div class="flag-options">
+    <div class="flag">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" alt="China flag">
+      <button onClick='selectConfigurationButton.performClick("zaS61N")'>China</button>
     </div>
-    <div class="flag-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" onClick='selectCountry("China")' />
-      <p>China</p>
+
+    <div class="flag">
+      <img src="https://cdn.britannica.com/78/6078-004-77AF7322/Flag-Australia.jpg" alt="Australia flag">
+      <button onClick='selectConfigurationButton.performClick("zaS61N")'>Australia</button>
     </div>
-    <div class="flag-item">
-      <img src="https://cdn.britannica.com/38/4038-004-111388C2/Flag-Thailand.jpg" onClick='selectCountry("Thailand")' />
-      <p>Thailand</p>
+
+    <div class="flag">
+      <img src="https://cdn.britannica.com/38/4038-004-111388C2/Flag-Thailand.jpg" alt="Thailand flag">
+      <button onClick='selectConfigurationButton.performClick("zaS61N")'>Thailand</button>
     </div>
   </div>
 </body>
