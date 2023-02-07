@@ -1,48 +1,53 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      background-color: #132452;
-      color: white;
-      font-family: Optima, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    .flag-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-    }
-    .flag-img {
-      width: 50%;
-      height: auto;
-    }
-  </style>
-</head>
-<body>
-  <h2>Choose your language</h2>
-  <h2>选择你的国家</h2>
-  <h2>เลือกประเทศของคุณ</h2>
-  <div class="flag-container">
-    <button onClick='selectConfigurationButton.performClick("zaS61N1")'>
-      <img class="flag-img" src="https://cdn.britannica.com/78/6078-004-77AF7322/Flag-Australia.jpg">
-    </button>
-  </div>
-  <div class="flag-container">
-    <button onClick='selectConfigurationButton.performClick("zaS61N2")'>
-      <img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg">
-    </button>
-  </div>
-  <div class="flag-container">
-    <button onClick='selectConfigurationButton.performClick("zaS61N3")'>
-      <img class="flag-img" src="https://cdn.britannica.com/38/4038-004-111388C2/Flag-Thailand.jpg">
-    </button>
-  </div>
-</body>
+  <head>
+    <style>
+      body {
+        background-color: #132452;
+        font-family: "Optima";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        color: white;
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+      .flag-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .flag-option {
+        margin: 1rem 0;
+        width: 50%;
+        background-color: #132452;
+        border: none;
+      }
+
+      .flag-img {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag-container">
+      <h1>Choose your language</h1>
+      <h1>选择你的国家</h1>
+      <h1>เลือกประเทศของคุณ</h1>
+      <div class="flag-option">
+        <img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" onClick='selectConfigurationButton.performClick("China")' />
+      </div>
+      <div class="flag-option">
+        <img class="flag-img" src="https://cdn.britannica.com/78/6078-004-77AF7322/Flag-Australia.jpg" onClick='selectConfigurationButton.performClick("Australia")' />
+      </div>
+      <div class="flag-option">
+        <img class="flag-img" src="https://cdn.britannica.com/38/4038-004-111388C2/Flag-Thailand.jpg" onClick='selectConfigurationButton.performClick("Thailand")' />
+      </div>
+    </div>
+  </body>
 </html>
