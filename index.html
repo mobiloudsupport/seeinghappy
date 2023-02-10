@@ -5,6 +5,7 @@
         background-color: white;
         font-family: "Nunito";
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100vh;
@@ -31,6 +32,7 @@
         color: #a62a1f;
         text-align: center;
         cursor: pointer;
+        width: 80%;
       }
 
       .logo {
@@ -38,7 +40,18 @@
       }
 
       .logo img {
-        width: 50%;
+        width: 80%;
+      }
+
+      @media (min-width: 500px) {
+        .option {
+          font-size: 2rem;
+          width: 50%;
+        }
+
+        .logo img {
+          width: 50%;
+        }
       }
     </style>
   </head>
