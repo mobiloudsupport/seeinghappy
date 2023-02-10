@@ -5,68 +5,54 @@
         background-color: white;
         font-family: "Nunito";
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100vh;
+      }
+
+      .logo img {
+        width: 50%;
+        margin-bottom: 2rem;
       }
 
       h1 {
         color: #a62a1f;
         text-align: center;
         margin: 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .option-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
       }
 
       .option {
-        margin: 1rem 0;
         width: 50%;
-        background-color: #a62a1f;
-        color: white;
         padding: 1rem;
         text-align: center;
-        border-radius: 10px;
-        font-size: 1.5rem;
+        background-color: #a62a1f;
+        color: white;
+        margin: 1rem 0;
         cursor: pointer;
       }
 
-      .logo {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
-      }
-
-      .logo img {
-        width: 50%;
-      }
-
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 1.2rem;
-        }
-        .option {
-          width: 80%;
-          font-size: 1.2rem;
-        }
+      @media only screen and (max-width: 600px) {
         .logo img {
           width: 80%;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .option {
+          font-size: 1.5rem;
         }
       }
     </style>
   </head>
   <body>
-    <div class="option-container">
-      <a class="logo">
-        <img src="splash-logo_(42) (1).png" />
-      </a>
-      <h1>Welcome to TimePlan's Online Portal</h1>
-      <div class="option" onClick='selectOption.performClick("Y90s04")'>Teacher / Support Staff?</div>
-      <div class="option" onClick='selectOption.performClick("jm3NyP")'>For Schools?</div>
+    <div class="logo">
+      <img src="splash-logo_(42) (1).png" />
     </div>
+    <h1>Choose your option</h1>
+    <div class="option" onClick='selectConfigurationButton.performClick("teacher")'>Teacher / Support Staff?</div>
+    <div class="option" onClick='selectConfigurationButton.performClick("school")'>For Schools?</div>
   </body>
 </html>
