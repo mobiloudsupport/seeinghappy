@@ -2,8 +2,8 @@
   <head>
     <style>
       body {
-        background-color: #132452;
-        font-family: "Optima";
+        background-color: white;
+        font-family: "Nunito";
         display: flex;
         align-items: center;
         justify-content: center;
@@ -11,43 +11,34 @@
       }
 
       h1 {
-        color: white;
+        color: #a62a1f;
         text-align: center;
         margin: 1rem 0;
       }
 
-      .flag-container {
+      .option-container {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
 
-      .flag-option {
+      .option {
         margin: 1rem 0;
-        width: 50%;
-        background-color: #132452;
+        background-color: white;
         border: none;
-      }
-
-      .flag-img {
-        width: 50%;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        color: #a62a1f;
+        text-align: center;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <div class="flag-container">
-      <h1>Choose your language</h1>
-      <h1>选择你的国家</h1>
-      <h1>เลือกประเทศของคุณ</h1>
-      <div class="flag-option">
-        <img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" onClick='selectConfigurationButton.performClick("BgYwwB")' />
-      </div>
-      <div class="flag-option">
-        <img class="flag-img" src="https://cdn.britannica.com/78/6078-004-77AF7322/Flag-Australia.jpg" onClick='selectConfigurationButton.performClick("O5cFzq")' />
-      </div>
-      <div class="flag-option">
-        <img class="flag-img" src="https://cdn.britannica.com/38/4038-004-111388C2/Flag-Thailand.jpg" onClick='selectConfigurationButton.performClick("PhBTkM")' />
-      </div>
+    <div class="option-container">
+      <h1>Choose your option</h1>
+      <div class="option" onClick='selectOption.performClick("teacher")'>Teacher / Support Staff?</div>
+      <div class="option" onClick='selectOption.performClick("school")'>For Schools?</div>
     </div>
   </body>
 </html>
