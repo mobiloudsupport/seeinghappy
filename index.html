@@ -9,30 +9,12 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        text-align: center;
       }
 
       h1 {
         color: #a62a1f;
-        text-align: center;
         margin: 1rem 0;
-      }
-
-      .option-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .option {
-        margin: 1rem 0;
-        background-color: white;
-        border: none;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
-        color: #a62a1f;
-        text-align: center;
-        cursor: pointer;
-        width: 80%;
       }
 
       .logo {
@@ -43,26 +25,32 @@
         width: 80%;
       }
 
-      @media (min-width: 500px) {
-        .option {
-          font-size: 2rem;
-          width: 50%;
-        }
+      .options-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        .logo img {
-          width: 50%;
-        }
+      .option-button {
+        margin: 1rem 0;
+        width: 80%;
+        background-color: #a62a1f;
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: 1.5rem;
       }
     </style>
   </head>
   <body>
     <a class="logo">
-      <img src="splash-logo_(42) (1).png"/>
+      <img src="splash-logo_(42) (1).png" />
     </a>
-    <div class="option-container">
-      <h1>Choose your option</h1>
-      <div class="option" onClick='selectOption.performClick("teacher")'>Teacher / Support Staff?</div>
-      <div class="option" onClick='selectOption.performClick("school")'>For Schools?</div>
+    <div class="options-container">
+      <h1>Welcome!</h1>
+      <h1>Please choose your option:</h1>
+      <button class="option-button">Teacher / Support Staff?</button>
+      <button class="option-button">For Schools?</button>
     </div>
   </body>
 </html>
